@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Air Dashboard</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+    <header class="header">
+            <h1 class="main-title"> Air-Care-AI : <u>[A Smart Air Quality & Health Advisory System]</u></h1>
+            <h2 class="page-title">Select Your City</h2>
+    <nav >
+        <ul>
+            <li><a class="nav" href="index.html">Dashboard</a></li>
+            <li><a  class="nav" href="alerts.html">Health-Alerts</a></li>
+            <li><a class="nav" href="chatbot.html">Chatbot</a></li>
+            <li><a class="nav" href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+    </header>
+
+  
+        <main class="main-content">
+            <section class="search-section">
+        <h2>Search for your city here</h2>
+  <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="search your city">
+        <button id="search-btn">search</button>
+    </div>
+    </section>
+
+    <section class="map-section">
+        <h3>Search your city using the map</h3>
+    <div class="map-conatainer">
+            <div id="map" class="india-map" style="height:400px; width: 100%;"></div>
+    </div>
+    </section>
+
+
+    <div><p>
+    
+    </p></div>
+
+    <section class="aqi-section">
+    <div class="aqi-card">
+      <h3>City: <span id="city-name">---</span></h3>
+        <p>Current AQI: <span id="current-aqi">---</span></p>
+        <p>Predicted AQI (Next 24 hrs): <span id="predicted24">---</span></p>
+        <p>Predicted AQI (Next 48 hrs): <span id="predicted48">---</span></p>
+      </div>
+      </section>
+
+      </main>
+      <div>
+    <p class="l-para"><b><u>For heath alerts please visit Health-Alerts page by using navigation link.</u></b></p>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="search.js"></script>
+</body>
+</html>

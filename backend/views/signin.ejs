@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/signin.css"/>
+</head>
+<body>
+     <div class="container">
+         <h1>
+            Air-Care-AI : <span>[<u>Smart Air Quality & Health Advisory System</u>]</span>
+        </h1>
+        <hr>
+        <br>
+        <br>
+   <h2 class="title">Sign In</h2>
+     <br>
+   <form action="/signin" method="POST">
+      <div class="form-box">
+        <div class="input-group">
+    <p>Please enter e-mail:</p><input type="email" name="email" placeholder="Email" required>
+   
+    <br>
+    <br>
+      <p>please enter password:</p><input type="password" name="password" placeholder="password" required>
+      <br>
+      <br>
+      </div>
+       </div>
+      <button type="submit">Sign In</button>
+</form>
+<br>
+<hr>
+<% if (err) {%>
+    <p style="color:red; text-align:center;"><%= err %></p>
+    <% } %>
+
+    
+</body>
+</html>

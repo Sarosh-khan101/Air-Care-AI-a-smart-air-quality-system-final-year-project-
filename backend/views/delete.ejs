@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete account</title>
+    <link rel="stylesheet" href="/css/delete.css"/>
+</head>
+<body>
+        <div class="container">
+         <h1>
+            Air-Care-AI : <span>[<u>Smart Air Quality & Health Advisory System</u>]</span>
+        </h1>
+        <hr>
+        <br>
+   <h2 class="title">Delete account</h2>
+     <br>
+     <div class="input-group">
+   <form action="/delete-account?_method=DELETE" method="POST">
+    <div>
+      <button type="submit">Delete account</button>
+      </div>
+</form>
+</div>
+<br>
+<hr>
+<% if (err) {%>
+    <p style="color:red; text-align:center;"><%= err %></p>
+    <% } %>
+</body>
+</html>

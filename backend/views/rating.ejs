@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RATING</title>
+    <link rel="stylesheet" href="/css/rating.css"/>
+</head>
+<body>
+    <div class="container">
+         <h1>
+            Air-Care-AI : <span>[<u>Smart Air Quality & Health Advisory System</u>]</span>
+        </h1>
+        <hr>
+        <br>
+    <h2 class="title">RATE US PLEASE!!</h2>
+    <br>
+    <div class="input-group">
+    <form action="/rate" method="POST">
+        <label>Rating (1-5)</label>
+        <br>
+        <input type="nyumber" name="rating" min="1" max="5" placeholder="Enter rating" required>
+        <br>
+        <br>
+        <label>Review</label>
+        <br>
+        <textarea name="review" placeholder="write your feedback...."></textarea>
+       <br>
+        <br>
+        <button type="submit">Submit Rating</button>
+    </form>
+    </div>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page Background */
+body {
+  background-color: #f5f8fa; /* soft light gray-blue like the image */
+  color: #333;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav:hover{
+    
+        color:green;
+    }
+
+.main-title {
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.page-title {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: #16a34a; /* green accent */
+}
+
+/* Navbar */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 5px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #16a34a;
+  border-bottom: 2px solid #16a34a;
+}
+
+/* Main Content */
+.main-content {
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Search Section */
+.search-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* rounded left-right like Google bar */
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-bar button {
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #15803d;
+}
+
+/* Map Section */
+.map-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.map-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: inline-block;
+}
+
+.india-map {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+}
+
+/* AQI Info Section */
+.aqi-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.aqi-card {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.aqi-card h3 {
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.aqi-card p {
+  margin: 6px 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+.l-para{
+    text-align: center;
+}
+
+

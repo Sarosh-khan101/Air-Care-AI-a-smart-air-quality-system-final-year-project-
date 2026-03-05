@@ -1,0 +1,114 @@
+/* General Page Layout */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  background: linear-gradient(135deg, #f3f4f7, #e8edf2);
+  background-attachment: fixed;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.nav a:hover{
+color:green;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+
+.main-title span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #444444;
+}
+
+.sub-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #16a34a;
+}
+
+.hall{
+  color:black;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* Health Alert Section */
+.health-alerts {
+  margin-top: 30px;
+}
+
+.health-alerts h2 {
+  color: #2c3e50;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* AQI Container */
+#alert-container {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Alert Boxes */
+.alert-box {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 60%;
+  margin: 20px auto;
+  padding: 15px;
+  text-align: left;
+}
+
+.alert-box h3 {
+  color: #006400;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.alert-box p {
+  font-size: 16px;
+  color: #333;
+  margin-left: 10px;
+}
+
+.chatbot{
+  text-align: center;
+}

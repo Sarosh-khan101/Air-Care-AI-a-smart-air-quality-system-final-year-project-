@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Chatbot</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <header class="header">
+            <h1 class="main-title"> Air-Care-AI : <u>[A Smart Air Quality & Health Advisory System]</u></h1>
+        <h1 class="subtitle"><b>Smart Health Chatbot</b></h1>
+
+            <nav class="navbar">
+                <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="search.html">City Search</a></li>
+            <li><a href="alerts.html">Health Alerts</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main class="chatbot-container">
+        <section class="intro">
+    <p><h2>Ask health related questions and get instant answers</h2></p>
+
+    
+        <div>
+            <h4>Hello! I am your health assistant.
+            How can i help you today?</h4>
+        </div>
+    </section>
+    <section class="chat-box">
+        <form class="chat-form">
+        <label for="userQuestion">Type your question: </label>
+        <input type="text" placeholder="Please ask your question" id="userQuestion" name="userQuestion">
+        <button type="submmit" id="send-btn">Send</button>
+        <p id="botResponse"></p>
+        </form>
+    </section>
+    </main>
+    <script src="chatbot.js"></script>
+</body>
+</html>
