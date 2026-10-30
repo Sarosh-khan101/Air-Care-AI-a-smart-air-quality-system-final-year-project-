@@ -5,7 +5,7 @@ const fetch =(...args) =>
    import ('node-fetch').then(({default:fetch}) => fetch(...args));
 const axios= require("axios");
 const cors = require("cors");;
-const port =5000;
+const PORT = process.env.PORT || 5000;
 const mysql = require('mysql2');
 const path=require("path");
 const methodOverride=require("method-override");
@@ -93,10 +93,11 @@ app.post("/chat", async (req, res) => {
 
 
 const db =  mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  database: 'fy_project',
-  password: 'MSKsql786@$'
+ host: process.env.DB_HOST || 'localhost',
+  user: process.env.DB_USER || 'root',
+  database: process.env.DB_NAME || 'fy_project',
+  password: process.env.DB_PASSWORD || 'MSKsql786@$',
+  port: process.env.DB_PORT || 3306
 })
 
 db.connect((err)=>{
@@ -205,8 +206,8 @@ app.post("/rate", async(req,res)=>{
 })
 
 // ------------------------------------------------------------
-app.listen(port,()=>{
-   console.log(`server is listening on port ${port}`);
+app.listen(PORT,()=>{
+   console.log(`server is listening on port ${PORT}`);
 });
 
 
