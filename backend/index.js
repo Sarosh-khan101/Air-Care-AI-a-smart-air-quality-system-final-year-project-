@@ -158,7 +158,7 @@ app.post("/signin", async (req,res)=>{
 
      req.session.userEmail = email;
      
-     res.redirect("/index.html");
+     res.redirect("/dashboard.html");
   });
 });
 
