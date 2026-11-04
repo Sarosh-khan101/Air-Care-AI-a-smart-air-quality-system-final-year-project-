@@ -99,9 +99,9 @@ const db = mysql.createConnection({
   user: process.env.DB_USER,
   database: process.env.DB_NAME,
   password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT || 4000, // TiDB ka default port 4000 hota hai
+  port: process.env.DB_PORT || 4000, 
   ssl: {
-    rejectUnauthorized: true // TiDB Cloud secure SSL connection maangta hai
+    rejectUnauthorized: true 
   }
 });
 
