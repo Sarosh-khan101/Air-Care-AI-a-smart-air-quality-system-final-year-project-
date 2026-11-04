@@ -12,6 +12,7 @@ const methodOverride=require("method-override");
 const session = require("express-session");
 const API_key = process.env.API_key.trim();
 const CAPI_key = process.env.CAPI_key.trim();
+const fs = require('fs');
 
 
 app.use(cors());
@@ -92,7 +93,7 @@ app.post("/chat", async (req, res) => {
 
 
 
-const mysql = require('mysql2');
+
 
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
@@ -101,7 +102,8 @@ const db = mysql.createConnection({
   password: process.env.DB_PASSWORD,
   port: process.env.DB_PORT || 4000, 
   ssl: {
-    rejectUnauthorized: true 
+    rejectUnauthorized: true,
+    ca: fs.readFileSync(path.join(__dirname, 'ca.pem')) // 👈 Yeh line add karni hai
   }
 });
 
