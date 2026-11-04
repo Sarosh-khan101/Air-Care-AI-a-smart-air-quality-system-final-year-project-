@@ -134,7 +134,7 @@ app.post("/signup",(req,res)=>{
 
 // -----------------------------------------------------------
 app.get("/signup", (req,res)=>{
-  res.sendFile(path.join(__dirname, "../signup.html"))
+  res.sendFile(path.join(__dirname, "../index.html"))
 })
 
 app.get("/signin", (req,res)=>{
