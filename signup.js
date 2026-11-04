@@ -27,7 +27,7 @@ form.addEventListener("submit", async(e)=>{
     });
     const result = await response.json();
     alert(result.message);
-    window.location.href="index.html";
+    window.location.href="dashboard.html";
     } catch(err){
         alert("Error in detail submition");
         console.error(err);

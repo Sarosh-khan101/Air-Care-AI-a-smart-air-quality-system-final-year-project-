@@ -158,7 +158,7 @@ app.post("/signin", async (req,res)=>{
 
      req.session.userEmail = email;
      
-     res.redirect("/dashboard.html");
+     res.redirect("https://air-care-ai.netlify.app/dashboard.html");
   });
 });
 
