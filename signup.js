@@ -17,7 +17,7 @@ form.addEventListener("submit", async(e)=>{
     };
 
     try{
-        const response = await fetch("http://localhost:5000/signup",
+        const response = await fetch("https://air-care-ai.onrender.com/signup",
             {
             method:"POST",
             headers:{

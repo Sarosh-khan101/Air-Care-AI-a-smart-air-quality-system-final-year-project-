@@ -11,7 +11,7 @@ form.addEventListener("submit", async (e) => {
     botResponse.innerText = "Thinking...";
 
     try {
-        const response = await fetch("http://localhost:5000/chat", {
+        const response = await fetch("https://air-care-ai.onrender.com/chat", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message: userMessage })

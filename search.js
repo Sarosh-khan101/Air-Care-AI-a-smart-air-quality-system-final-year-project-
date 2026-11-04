@@ -21,7 +21,7 @@ searchBtn.addEventListener("click", async ()=>{
 
 async function getAQIData(city){
   try {
-    const response = await fetch(`http://localhost:5000/api/aqi/`+ city);
+    const response = await fetch(`https://air-care-ai.onrender.com/api/aqi/`+ city);
     const data = await response.json();
 
     if (data.aqi) {
