@@ -92,17 +92,22 @@ app.post("/chat", async (req, res) => {
 
 
 
-const db =  mysql.createConnection({
- host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'root',
-  database: process.env.DB_NAME || 'fy_project',
-  password: process.env.DB_PASSWORD || 'MSKsql786@$',
-  port: process.env.DB_PORT || 3306
-})
+const mysql = require('mysql2');
+
+const db = mysql.createConnection({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT || 4000, // TiDB ka default port 4000 hota hai
+  ssl: {
+    rejectUnauthorized: true // TiDB Cloud secure SSL connection maangta hai
+  }
+});
 
 db.connect((err)=>{
   if (err) {
-    console.log("Database connection failed",err);
+    console.log("Database connection failed", err);
     process.exit(1);
   }
   console.log("Connected to MySQL database");
