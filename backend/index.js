@@ -207,7 +207,7 @@ app.post("/rate", async(req,res)=>{
       console.log("Database error",err);
       return res.redirect("index.html")
     }
-    res.redirect("index.html");
+    res.redirect("dashboard.html");
   })
 
 })
